@@ -9,6 +9,14 @@ public class Book {
 	public Book() {
 		super();
 	}
+	
+	public Book(String title, String author, double price,String category) {
+		super();
+		this.title = title;
+		this.author = author;
+		this.price = price;
+		this.category = category;
+	}
 	public Book(String title, String author, Integer bookId, double price,String category) {
 		super();
 		this.title = title;
@@ -47,9 +55,11 @@ public class Book {
 	public void setPrice(double price) {
 		this.price = price;
 	}
+
 	@Override
 	public String toString() {
-		return "Book [title=" + title + ", author=" + author + ", bookId=" + bookId + ", price=" + price + "]";
+		return "Book [title=" + title + ", author=" + author + ", bookId=" + bookId + ", price=" + price + ", category="
+				+ category + "]";
 	}
 	
 	
